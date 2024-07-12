@@ -19,5 +19,49 @@ body {
     padding: 2rem;
     border-radius: 14px;
     color: #C8ACD6;
+    box-shadow:0 4px 8px rgba(200, 172, 214,0.5);
 
+}
+h1
+{
+    background: linear-gradient(to left, #a613e6, #9174f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+#new-task-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 1.5rem 0rem;
+
+
+}
+
+input,
+button {
+    padding: 5px;
+    background: linear-gradient(to right, #3C0753, #5c53bd9a);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#task-input {
+    font-size: 1.145rem;
+    width: 100%;
+    background: linear-gradient(to right, #3C0753, #5c53bd9a);
+}
+
+
+#task-input::placeholder {
+    color: #766ccf;
+}
+
+.addTask {
+    padding: 15px;
+    background: linear-gradient(to right, #3C0753, #b764ee);
+    border: none;
+    border-radius: 0.5rem;
 }
