@@ -19,11 +19,12 @@ body {
     padding: 2rem;
     border-radius: 14px;
     color: #C8ACD6;
-    box-shadow:0 4px 8px rgba(200, 172, 214,0.5);
+    box-shadow: 0 4px 8px rgba(200, 172, 214, 0.5);
 
 }
-h1
-{
+
+h1,
+h2 {
     background: linear-gradient(to left, #a613e6, #9174f8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,13 +32,12 @@ h1
     color: transparent;
 
 }
+
 #new-task-form {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     margin: 1.5rem 0rem;
-
-
 }
 
 input,
@@ -64,4 +64,51 @@ button {
     background: linear-gradient(to right, #3C0753, #b764ee);
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.tasks {
+    flex: 0.93;
+}
+
+.activities {
+    display: flex;
+    gap: 13px;
+}
+
+.task {
+    width: 100%;
+    padding: 15px;
+    color: #766ccf;
+    font-size: 1rem;
+}
+
+.editBtn,
+.deleteBtn {
+    padding: 15px;
+    color: #000000;
+    background: linear-gradient(to right, #3C0753, #b764ee);
+    cursor: pointer;
+}
+
+.addTask:active,
+.editBtn:active,
+.deleteBtn:active {
+    transition: ease-out 0.5s;
+    transform: scale(45%);
 }
