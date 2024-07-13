@@ -90,6 +90,7 @@ button {
 .activities {
     display: flex;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .taskName { 
@@ -103,6 +104,7 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     text-shadow: 2px 2px  #000000;
+   text-overflow: ellipsis;
    
 }
 
@@ -135,3 +137,26 @@ button {
     display: none;
     
 }
+
+@media only screen and (max-width: 700px){
+    .container {
+       min-width: 52vw;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    .editBtn, .deleteBtn {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .activities {
+        margin-top: 10px;
+        width: 100%;
+        
+    }
+} 
