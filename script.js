@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
 
+        const editBtn = taskContent.querySelector('.editBtn');
+        const taskInput = taskContent.querySelector('.taskName');
+
+        editBtn.addEventListener('click', () => {
+            if (taskInput.hasAttribute('readonly')) {
+                taskInput.removeAttribute('readonly');
+                editBtn.innerText = 'Save';
+            } else {
+                taskInput.setAttribute('readonly', true);
+                editBtn.innerText = 'Edit';
+            }
+        });
 
     });
 });
