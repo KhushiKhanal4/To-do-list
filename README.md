@@ -25,7 +25,7 @@ Welcome to your personal task manager! This project is a simple and responsive T
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/To-Do-List-Task-Manager.git
+    git clone https://github.com/KhushiKhanal4/To-Do-List-Task-Manager.git
     ```
 
 2. Navigate to the project directory:
@@ -41,6 +41,22 @@ Welcome to your personal task manager! This project is a simple and responsive T
 1. **Adding a Task**: Type your task into the input field and click the "Add Task" button.
 2. **Editing a Task**: Click the "Edit" button next to a task to enable editing. Once edited, click "Save" to save the changes.
 3. **Deleting a Task**: Click the "Delete" button next to a task to remove it from the list.
+
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find any bugs, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+GitHub: KhushiKhanal4
+Email: your.khanalkhushi123@gmail.com
 
 ## Project Structure
 
