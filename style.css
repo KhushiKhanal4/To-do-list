@@ -70,35 +70,34 @@ button {
     cursor: pointer;
 }
 
-.task-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-
-}
 
 .task-list {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 5px;
     margin-top: 1rem;
 }
-
-.tasks {
-    flex: 0.93;
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E236C;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
+
 
 .activities {
     display: flex;
-    gap: 13px;
+    gap: 10px;
 }
 
-.task { 
+.taskName { 
     color: #766ccf;
     font-size: 1rem;
-    width: 100%;
-    padding: 15px;
+    padding: 5px;
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
    
 }
 
@@ -108,6 +107,7 @@ button {
     color: #000000;
     background: linear-gradient(to right, #3C0753, #b764ee);
     padding: 15px;
+    border:none;
     cursor: pointer; 
 }
 
@@ -116,4 +116,17 @@ button {
 .deleteBtn:active {
     transition: ease-out 0.5s;
     transform: scale(45%);
+}
+
+.error{   
+    background:linear-gradient(to right,rgba(248, 207, 207, 0.5),rgba(77, 1, 1, 0.582)) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 22px 0px;
+    color: rgb(63, 4, 0);
+    display: none;
+    
 }
