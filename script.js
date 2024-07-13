@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const error = document.querySelector('.error');
 
 
-    add.addEventListener('submit', (event)=> {
+
+    add.addEventListener('submit', (event) => {
         event.preventDefault();
 
 
@@ -30,6 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>`;
         taskList.appendChild(taskContent);
         input.value = '';
-    });
 
+        const deleteBtn = taskContent.querySelector('.deleteBtn');
+        deleteBtn.addEventListener('click', () => {
+            taskContent.remove();
+        });
+
+
+
+    });
 });
