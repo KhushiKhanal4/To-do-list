@@ -54,6 +54,7 @@ button {
 #task-input {
     font-size: 1.145rem;
     width: 100%;
+    color: #cbc7f1;
     background: linear-gradient(to right, #3C0753, #5c53bd9a);
 }
 
@@ -68,6 +69,7 @@ button {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    font-weight: 700;
 }
 
 
@@ -91,19 +93,22 @@ button {
 }
 
 .taskName { 
-    color: #766ccf;
+    color: #9174f8;
     font-size: 1rem;
     padding: 5px;
     flex: 1;
     border: none;
     background: none;
     outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px  #000000;
    
 }
 
 .editBtn,
 .deleteBtn {
-   
+    font-weight: 700;
     color: #000000;
     background: linear-gradient(to right, #3C0753, #b764ee);
     padding: 15px;
