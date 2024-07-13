@@ -25,13 +25,13 @@ Welcome to your personal task manager! This project is a simple and responsive T
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/KhushiKhanal4/To-Do-List-Task-Manager.git
+    git clone https://github.com/KhushiKhanal4/To-Do-List.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd To-Do-List-Task-Manager
+    cd To-Do-List
     ```
 
 3. Open `index.html` in your web browser to see the application in action.
@@ -49,14 +49,14 @@ Contributions are welcome! If you have suggestions for improvements or find any 
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
 If you have any questions or feedback, feel free to reach out:
 
-GitHub: KhushiKhanal4
-Email: your.khanalkhushi123@gmail.com
+**GitHub**: KhushiKhanal4
+**Email**: khanalkhushi123@gmail.com
 
 ## Project Structure
 
