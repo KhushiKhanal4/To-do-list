@@ -157,6 +157,17 @@ button {
     .activities {
         margin-top: 10px;
         width: 100%;
+    }   
+        #task-input::placeholder {
+            font-size: 0.9rem;
+            
+        }
         
+    } 
+    
+    @media only screen and (max-width: 370px) {
+    #task-input::placeholder {
+            font-size: 0.67rem;
+            
+        }
     }
-} 
