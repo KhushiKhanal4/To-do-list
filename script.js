@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.querySelector('.task-list');
     const error = document.querySelector('.error');
 
-
+    loadTasksFromLocalStorage();
 
     add.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         error.style.display = 'none';
 
+        addTask(taskName);
+        input.value = '';
+    });
 
+    function addTask(taskName) {
         const taskContent = document.createElement('div');
         taskContent.classList.add('task');
         taskContent.innerHTML = `
@@ -30,11 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="deleteBtn">Delete</button>
                     </div>`;
         taskList.appendChild(taskContent);
-        input.value = '';
+        
+        saveTasksToLocalStorage();
 
         const deleteBtn = taskContent.querySelector('.deleteBtn');
         deleteBtn.addEventListener('click', () => {
             taskContent.remove();
+            saveTasksToLocalStorage();
         });
 
 
@@ -48,8 +54,25 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 taskInput.setAttribute('readonly', true);
                 editBtn.innerText = 'Edit';
+
+                saveTasksToLocalStorage();
             }
         });
+    }
+    function saveTasksToLocalStorage() {
+        const tasks = [];
+        document.querySelectorAll('.taskName').forEach(task => {
+            tasks.push(task.value);
+        });
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
 
+    function loadTasksFromLocalStorage() {
+        const tasks = JSON.parse(localStorage.getItem('tasks'));
+        if (tasks) {
+            tasks.forEach(taskName => {
+                addTask(taskName);
+            });
+        }
+    }
     });
-});
